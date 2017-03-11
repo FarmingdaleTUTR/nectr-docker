@@ -5,6 +5,7 @@ volumes:
   postgres_backup_dev: {}
 
 services:
+
   postgres:
     build: ./compose/postgres
     volumes:
@@ -32,8 +33,6 @@ services:
 
       - mailhog
 
-
-
   pycharm:
     build:
       context: .
@@ -46,8 +45,6 @@ services:
       - .:/app
     links:
       - postgres
-
-
 
   mailhog:
     image: mailhog/mailhog
