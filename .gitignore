@@ -73,3 +73,5 @@ nectr/media/
 
 
 staticfiles/
+/.ideOld/
+/.notes/
